@@ -1,18 +1,18 @@
 # VS Code Merlin Extension
 
-**THIS IS WORK IN PROGRESS, DO NOT USE**
+Experimental build, work in progress here: https://github.com/arrowresearch/vscode-merlin
 
-## Producing the Extension Package
+## Building the Extension
 
+### Prerequisite
+This extension requires `esy@0.6`:
+```
+npm install -g @esy-nightly/esy
+```
+
+### Building
+
+- Clone this repo: `git clone git@github.com:rusty-key/vscode-merlin.git`
+— Switch to this branch: `git branch rusty-build`
 - Run `npm run package` to produce `*.vsix` extension package.
 - Run `code --install-extension *.vsix` to install the extension with VS Code.
-
-## Running the Extension in Development Mode
-
-- Run `npm install` in this directory. This installs all necessary npm modules
-  in both the client and server directory
-- Open VS Code on this directory.
-- Press `Ctrl+Shift+B` to compile the client and server.
-- Switch to the Debug viewlet.
-- Select `Launch Client` from the drop down.
-- Run the launch config.
